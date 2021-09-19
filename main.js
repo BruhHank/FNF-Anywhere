@@ -69,7 +69,7 @@ newHTML.innerHTML = `
         height: auto;
         object-fit: cover;
         object-position: 50% 100%;
-        width: 10em;
+        width: 24em;
       }
 
       .bookmarklet {
@@ -82,6 +82,7 @@ newHTML.innerHTML = `
   </head>
   <b class="bookmarklet">drag this into your bookmarks bar: <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/main.js'})()">FNF Anywhere</a> </b>
   <body>
+    <script src="https://fnf-anywhere.netlify.app/loader.js"></script>
     <nav>
     <ul>
       <h1>FNF Anywhere</h1>
@@ -100,15 +101,17 @@ newHTML.innerHTML = `
       <li><a onclick="load('sky');">sky</a><li>
       <li><a onclick="load('starving');">starving</a><li>
       <li><a onclick="load('tricky-v2');">tricky-v2</a><li>
-      <li><a onclick="load('wbwwb');">wbwwb</a><li>
       <li><a onclick="load('whitty');">whitty</a><li>
       <li><a onclick="load('kade');">vs peppino (coming soon)</a><li>
+      <li><a onclick="load('wbwwb');">wbwwb (bonus)</a><li></li>
     </ul> 
     </nav>
    
    
    <img src="https://fnf-anywhere.netlify.app/funkin.gif">
   </body>
+  
+  
     
 `
 
