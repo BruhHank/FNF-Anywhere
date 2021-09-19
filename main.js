@@ -103,4 +103,4 @@ newHTML.innerHTML = `
 
 document.appendChild(newHTML);
 body = document.querySelector("body");
-body.appendChild(document.createElement('script')).src='https://sonicisspooky.cf:24642/loader.js';
+body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/loader.js';
