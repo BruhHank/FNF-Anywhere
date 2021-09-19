@@ -1,1 +1,1 @@
-javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://sonicisspooky.cf:24642/main.js'})()
+javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/main.js'})()
