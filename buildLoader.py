@@ -11,7 +11,7 @@ with open('loader.js', 'r') as loader:
 with open('main.js', 'r') as loaderFull:
     with open('index.html') as html:
         loaderFullJS = loaderFull.read()
-        loaderFullJS = loaderFullJS.replace('insert_html_here', html.read)
+        loaderFullJS = loaderFullJS.replace('insert_html_here', html.read())
         loaderMinJS = jsmin(loaderFull.read())
 
         with open('loaderFullMin.js', 'w') as loaderMin:
