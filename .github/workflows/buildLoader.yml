@@ -1,7 +1,7 @@
 name: Build Loader
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Build Loader:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v2.2.2
@@ -28,8 +28,8 @@ jobs:
       - name: Upload Full Minified Loader
         uses: actions/upload-artifact@v2.2.4
         with:
-            name: loaderMinFull
+            name: loaderFullMin.js
             # A file, directory or wildcard pattern that describes what to upload
-            path: loaderMinFull.js
+            path: loaderFullMin.js
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
