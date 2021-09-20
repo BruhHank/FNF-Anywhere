@@ -72,6 +72,11 @@ newHTML.innerHTML = `
         width: 24em;
       }
 
+      .link {
+        color: red;
+        font-style: italic;
+      }
+
       .bookmarklet {
         position: absolute;
         top: 8px;
@@ -80,7 +85,7 @@ newHTML.innerHTML = `
 
     </style>  
   </head>
-  <b class="bookmarklet">drag this into your bookmarks bar: <a href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/main.js'})()">FNF Anywhere</a> </b>
+  <b class="bookmarklet">drag this into your bookmarks bar: <a class="link" href="javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/main.js'})()">FNF Anywhere</a> </b>
   <body>
     <script src="https://fnf-anywhere.netlify.app/loader.js"></script>
     <nav>
@@ -100,10 +105,11 @@ newHTML.innerHTML = `
       <li><a onclick="load('shaggy');">shaggy</a><li>
       <li><a onclick="load('sky');">sky</a><li>
       <li><a onclick="load('starving');">starving</a><li>
-      <li><a onclick="load('tricky-v2');">tricky-v2</a><li>
-      <li><a onclick="load('whitty');">whitty</a><li>
+      <li><a onclick="load('tricky');">tricky</a><li>
+      <li><a onclick="load('zardy');">zardy</a><li>
       <li><a onclick="load('kade');">vs peppino (coming soon)</a><li>
       <li><a onclick="load('wbwwb');">wbwwb (bonus)</a><li></li>
+      
     </ul> 
     </nav>
    
@@ -112,7 +118,6 @@ newHTML.innerHTML = `
   </body>
   
   
-    
 `
 
 document.appendChild(newHTML);
