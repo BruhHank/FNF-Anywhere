@@ -1,4 +1,4 @@
-name: Build Loader
+name: Build-Loader
 on: [push]
 jobs:
   Build Loader:
