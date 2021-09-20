@@ -14,5 +14,22 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: ls ${{ github.workspace }}
+      - name: Install Python Dependencies
+        run: pip install --yes jsmin
+      - name: Run Python Build Script
+        run: python buildLoader.py
+      - name: Upload Minified Loader
+        uses: actions/upload-artifact@v2.2.4
+        with:
+            name: loaderMin
+            # A file, directory or wildcard pattern that describes what to upload
+            path: loaderMin.js
+            
+      - name: Upload Full Minified Loader
+        uses: actions/upload-artifact@v2.2.4
+        with:
+            name: loaderMinFull
+            # A file, directory or wildcard pattern that describes what to upload
+            path: loaderMinFull.js
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: python --version
