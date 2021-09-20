@@ -10,4 +10,4 @@ insert_html_here
 
 document.appendChild(newHTML);
 body = document.querySelector("body");
-body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/loader.js';
+body.appendChild(document.createElement('script')).src='https://fnf-anywhere.netlify.app/iframeInjector.js';
