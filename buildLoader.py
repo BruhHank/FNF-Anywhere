@@ -9,10 +9,10 @@ with open('loader.js', 'r') as loader:
 
 # Build loaderFullMin
 with open('main.js', 'r') as loaderFull:
+    loaderFullJS = loaderFull.read()
     with open('index.html') as html:
-        loaderFullJS = loaderFull.read()
         loaderFullJS = loaderFullJS.replace('insert_html_here', html.read())
-        loaderMinJS = jsmin(loaderFull.read())
+        loaderFullMinJS = jsmin(loaderFullJS.read())
 
-        with open('loaderFullMin.js', 'w') as loaderMin:
-            loaderMin.write(loaderMinJS)
+        with open('loaderFullMin.js', 'w') as loaderFullMin:
+            loaderFullMin.write(loaderFullMinJS)
