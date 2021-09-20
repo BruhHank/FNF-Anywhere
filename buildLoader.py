@@ -12,7 +12,7 @@ with open('main.js', 'r') as loaderFull:
     loaderFullJS = loaderFull.read()
     with open('index.html') as html:
         loaderFullJS = loaderFullJS.replace('insert_html_here', html.read())
-        loaderFullMinJS = jsmin(loaderFullJS.read())
+        loaderFullMinJS = jsmin(loaderFullJS)
 
         with open('loaderFullMin.js', 'w') as loaderFullMin:
             loaderFullMin.write(loaderFullMinJS)
