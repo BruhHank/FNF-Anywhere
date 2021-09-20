@@ -15,7 +15,7 @@ jobs:
       - name: List files in the repository
         run: ls ${{ github.workspace }}
       - name: Install Python Dependencies
-        run: pip install --yes jsmin
+        run: pip install jsmin
       - name: Run Python Build Script
         run: python buildLoader.py
       - name: Upload Minified Loader
