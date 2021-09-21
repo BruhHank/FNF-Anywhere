@@ -13,8 +13,8 @@ with open('mainFull.js', 'r') as loaderFull:
     with open('index.html') as html:
         loaderFullJS = loaderFullJS.replace('insert_html_here', html.read())
         with open('iframeInjector.js', 'r') as iframeInjector:
-        loaderFullJS = loaderFullJS.replace('insert_js_here', iframeInjector.read())
-        loaderFullMinJS = jsmin(loaderFullJS)
+            loaderFullJS = loaderFullJS.replace('insert_js_here', jsmin(iframeInjector.read()))
+            loaderFullMinJS = jsmin(loaderFullJS)
 
         with open('loaderFullMin.js', 'w') as loaderFullMin:
             loaderFullMin.write(loaderFullMinJS)
